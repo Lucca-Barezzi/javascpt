@@ -1,0 +1,226 @@
+*{padding: 0;
+margin: 0;}
+body {
+    background-image: linear-gradient(to right,black,white);
+    font-family: Andale Mono, monospace;
+
+  }
+
+.titulo{text-align: center;
+font-size: 3.5rem;
+background-color: rgb(10, 10, 10);
+padding-bottom: 2%;}
+
+header{-webkit-animation: h2 3s infinite linear;
+          animation: h2 3s infinite linear;}
+
+          @-webkit-keyframes h2 {
+            0%, 100% {
+              color: rgb(253, 173, 240);
+            }
+            25% {
+              color: deeppink;
+            }
+            50% {
+              color: deepskyblue;
+            }
+            75% {
+              color: white;
+            }
+          }
+          
+          @keyframes h2 {
+            0%, 100% {
+              color: rgb(253, 173, 240);
+            }
+            25% {
+              color: deeppink;
+            }
+            50% {
+              color: deepskyblue;
+            }
+            75% {
+              color: white;
+            }
+          }
+
+  h1 {
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    margin-bottom:7%;
+
+  
+  }
+  
+  p,tr {
+ 
+    font-weight: 300;
+    text-align: center;
+    font-size: 18px;
+    color: grey;
+  }
+
+  table{
+      width: 90%;
+      margin: 0 auto;
+  }
+
+  .td1{
+    width: 50%;
+    text-align: left;
+    padding-left: 20px;
+    color: white;
+  }
+
+  .td2{
+    width: 40%;
+    text-align: right;
+  }
+
+  .contenido {
+    display: border-box;
+    width: 35%; 
+    margin:4% 30%;
+    background: rgb(0, 0, 0);
+    height: 60vh;
+    padding-top: 6px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+
+
+    border-radius: 28px 28px 28px 28px;
+    -moz-border-radius: 28px 28px 28px 28px;
+    -webkit-border-radius: 28px 28px 28px 28px;
+    border: 0px solid black;
+  }
+
+
+ 
+
+  .frame {
+    width: 90%;
+    margin: 40px auto;
+    text-align: center;
+    height: 6vh;
+  }
+  button {
+    margin: 20px;
+  }
+  .custom-btn {
+    width: 70%;
+    height: 40px;
+    padding: 10px 25px;
+    border: 2px solid #000;
+    font-family: Andale Mono, monospace;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* 1 */
+  .btn-1 {
+    transition: all 0.5s ease;
+  }
+  .btn-1:hover {
+     box-shadow:
+     -7px -7px 20px 0px #fff9,
+     -4px -4px 5px 0px #fff9,
+     7px 7px 20px 0px #0002,
+     4px 4px 5px 0px #0001;
+  }
+  
+  /* 3 */
+  .btn-3 {
+    /*margin: 0 auto;
+    width: 100%;*/
+     line-height: 40px;
+    padding: 0;
+    background: transparent;
+    position: relative;
+    z-index: 2;
+  color: black;
+
+    perspective: 300px;
+    background-color: rgb(200, 199, 199);
+  }
+  .btn-3:hover{
+    color: black;
+    
+  }
+  .btn-3:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:white;
+
+    z-index: -1;
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+    transition: all 0.3s ease;
+ 
+  }
+  .btn-3:hover:after {
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+   opacity: 10%;
+  }
+  
+  
+  /* 2 */
+  .btn-2 {
+     background: rgb(255, 255, 255);
+    color: rgb(3, 3, 3);
+    z-index: 1;
+  }
+  .btn-2:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    direction: rtl;
+    z-index: -1;
+    background: rgb(200, 199, 199);
+    transition: all 0.3s ease;
+  }
+  .btn-2:hover {
+    color: black;
+  }
+  .btn-2:hover:after {
+    left: auto;
+    right: 0;
+    width: 100%;
+  }
+  .btn-2:active {
+    top: 2px;
+  }
+
+
+  nav{
+text-align: center;}
+
+
+.nav{text-decoration: none;
+padding: 1rem;
+background-color: white;
+text-align: center;
+}
+
+
+.formu{text-align: center;
+margin-top: 5%;}
+
+.input{padding: 3rem;
+background-color: red;}
